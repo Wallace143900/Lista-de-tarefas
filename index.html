@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- SCRIPTS -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="header__container">
+      <div class="header__content">
+        <h1 class="header__title">MY TASKS</h1>
+        <input
+          class="header__input--search input__box"
+          type="search"
+          placeholder="Pesquisar tarefa"
+        />
+      </div>
+    </header>
+    <!-- Conteúdo Principal -->
+    <main class="main__container">
+      <!-- Formulário para adicionar nova task -->
+      <form class="form__container">
+        <h2 class="form__title title2">Inserir tarefa</h2>
+        <div class="form__input-container">
+          <input
+            id="input_title"
+            class="form__input--text input__box"
+            type="text"
+            placeholder="Digitar titulo da tarefa"
+          />
+          <select class="form__input--priority input__box">
+            <option value="">Selecionar tipo</option>
+            <option value="urgente">Urgente</option>
+            <option value="importante">Importante</option>
+            <option value="normal">Normal</option>
+          </select>
+        </div>
+        <button class="form__button--add-task">
+          Adicionar Tarefa na Lista
+        </button>
+      </form>
+
+      <!-- Listagem de tasks -->
+      <section class="tasks__container">
+        <h2 class="titulo">Tarefas</h2>
+        <ul class="tasks__list">
+          <!--
+          <li class="task__item">
+            <div class="task-info__container">
+              <span class="task-type span-urgent"></span>
+              <p>Comprar comida para o gato</p>
+              <button class="task__button--remove-task"><img src="assets/trash-icon.svg" alt=""></button>
+            </div>
+          </li>
+         
+          <li class="task__item">
+            <div class="task-info__container">
+              <span class="task-type span-important"></span>
+              <p>Consertar Computador</p>
+              <button class="task__button--remove-task"><img src="assets/trash-icon.svg" alt=""></button>
+            </div>
+          </li>
+          <li class="task__item">
+            <div class="task-info__container">
+              <span class="task-type span-normal"></span>
+              <p>Beber água</p>
+              <button class="task__button--remove-task"><img src="assets/trash-icon.svg" alt=""></button>
+            </div>
+          </li>
+        -->
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
